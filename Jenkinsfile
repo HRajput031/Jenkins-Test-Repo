@@ -1,20 +1,20 @@
-pipeline {
+ppipeline {
     agent any
 
     stages {
         stage('Build') {
             steps {
-                echo "Building from Jenkinsfile..."
+                echo "Building from DEV branch..."
             }
         }
         stage('Test') {
             steps {
-                echo "Running tests from Jenkinsfile..."
+                echo "Running tests from DEV branch..."
             }
         }
         stage('Deploy') {
             steps {
-                echo "Deploying from Jenkinsfile..."
+                echo "Deploying DEV branch..."
             }
         }
     }
